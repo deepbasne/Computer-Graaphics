@@ -32,19 +32,19 @@ bool **image;
 void renderPixel(int x, int y) {
 	assert(x >= 0 && y >= 0 && x <= size && y <= size);
 	image[x][y] = 1;
-    image[y][x] = 1;
+    image[y][x] = 1;	//adding the pixel's symmetric counterpart
 	
 	// TODO:  light up the pixel's symmetric counterpart
 }
-
+	//got help from reading material provided
 void rasterizeArc(int radius) {
     int x=0;
 	int y = radius;
 	double d = 5.0 / 4.0 - radius;
-	renderPixel(x,y);
+	renderPixel(x,y);	//calling the render function
 
 	while(y>x)
-	{
+	{	//checking conditions to make decisions for d
 		if(d<0)   		/*Select E*/
 		{
 			d += 2.0 * x + 3.0;
@@ -55,7 +55,7 @@ void rasterizeArc(int radius) {
 			y--;		//decrement in y
 		}
 		x++;		//increase the value of x
-		renderPixel(x,y);
+		renderPixel(x,y);	//calling the render function
 	}
 	// TODO:  rasterize the arc using renderPixel to light up pixels
 }
