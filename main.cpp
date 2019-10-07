@@ -48,7 +48,7 @@ float specular[] = { 1.0, 1.0, 1.0, 1.0 };
 float shininess[] = { 50.0 };
 
 void problem1() {
-
+	//The tepots are created, positioned and rotated as required
 	//1st teacup
 	glPushMatrix(); //begin
 	glTranslatef(1, 0, 0); //[position
@@ -208,7 +208,7 @@ void problem2() {
 void problem3() {
 
 
-
+	//Teapots are arranged in a triangle or pyramid
 	//1st teacup
 	glPushMatrix(); //begin
 	glTranslatef(0, 1, 0.5); //[position
@@ -352,6 +352,7 @@ void problem3() {
 }
 
 void problem4() {
+	//couldnt finish it because of lack of time
 	// TODO: Your code here!
 }
 
