@@ -84,7 +84,7 @@ def efros(img_data, new_size_x, new_size_y, kernel_size, t):
     new_image_data[0: size_seed_x, 0: size_seed_y] = seed_data
 
 
-    # TO DO: non-square images
+    
 
     it = 0
     for i in range(size_seed_x, new_size_x ):
